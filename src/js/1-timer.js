@@ -28,10 +28,6 @@ const options = {
 document.addEventListener("DOMContentLoaded", function () {
     const dateTimePicker = flatpickr("#datetime-picker", options);
 
-    document.querySelector("#datetime-picker").addEventListener("click", () => {
-        dateTimePicker.open();
-    });
-
     document.querySelector('[data-start]').addEventListener('click', startTimer);
 
     function startTimer() {
